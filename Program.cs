@@ -12,6 +12,8 @@ namespace ConsoleApplication3
             int[] numbers = { 10, 5, 15, 20, 30 };
             double avarage = FindAvarage(numbers);
             Console.WriteLine("avarage " + avarage);
+            int max = FindMaxValue(numbers);
+            Console.WriteLine("max " + max);
         }
 
         public static double FindAvarage(int[] numbers)
@@ -28,6 +30,28 @@ namespace ConsoleApplication3
             }
 
             return sum / numbers.Length;
+        }
+
+        public static int FindMaxValue(int[] numbers)
+        {
+            if (numbers == null || numbers.Length == 0)
+            {
+                Console.WriteLine("blad");
+            }
+
+            int max = numbers[0];
+            foreach (int num in numbers)
+            {
+                if (num > max)
+                {
+                    max = num;
+                }
+                
+                    
+                
+            }
+
+            return max;
         }
     }
 }
