@@ -9,6 +9,25 @@ namespace ConsoleApplication3
             Console.WriteLine("mod1");
             Console.WriteLine("mod2");
             Console.WriteLine("mod3");
+            int[] numbers = { 10, 5, 15, 20, 30 };
+            double avarage = FindAvarage(numbers);
+            Console.WriteLine("avarage " + avarage);
+        }
+
+        public static double FindAvarage(int[] numbers)
+        {
+            if (numbers == null || numbers.Length == 0)
+            {
+                Console.WriteLine("zle dane");
+            }
+
+            int sum = 0;
+            foreach (int num in numbers)
+            {
+                sum += num;
+            }
+
+            return sum / numbers.Length;
         }
     }
 }
