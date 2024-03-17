@@ -8,6 +8,7 @@ namespace ConsoleApplication3
         {
             Console.WriteLine("mod1");
             Console.WriteLine("mod2");
+            Console.WriteLine("mod3");
         }
     }
 }
