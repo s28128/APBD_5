@@ -23,13 +23,13 @@ namespace ConsoleApplication3
                 Console.WriteLine("zle dane");
             }
 
-            int total = 0;
+            int suma = 0;
             foreach (int num in numbers)
             {
-                total += num;
+                suma += num;
             }
 
-            return total / numbers.Length;
+            return suma / numbers.Length;
         }
 
         public static int FindMaxValue(int[] numbers)
